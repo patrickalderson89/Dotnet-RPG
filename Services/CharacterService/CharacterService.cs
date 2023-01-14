@@ -4,7 +4,7 @@ namespace Dotnet_RPG.Services.CharacterService
     {
         private static List<Character> characters = new List<Character> {
             new Character(),
-            new Character {Name = "Sam"}
+            new Character {ID= 1, Name = "Sam"}
         };
         public async Task<ServiceResponse<List<Character>>> AddCharacter(Character newChar)
         {
